@@ -2154,7 +2154,7 @@ def process_methods(apk_name, decompiler, extractor, methods, smali_dir, output_
 
 from openai import OpenAI
 def deepseek_api(promt_str):
-    client = OpenAI(api_key="sk-837765b3c48740df810a04b8f27adabe", base_url="https://api.deepseek.com")
+    client = OpenAI(api_key="###", base_url="https://api.deepseek.com")
 
     response = client.chat.completions.create(
         model="deepseek-chat",
@@ -2166,7 +2166,7 @@ def deepseek_api(promt_str):
     )
     return response.choices[0].message.content
 def deepseek_api_chat(content, task):
-    client = OpenAI(api_key="sk-837765b3c48740df810a04b8f27adabe", base_url="https://api.deepseek.com")
+    client = OpenAI(api_key="###", base_url="https://api.deepseek.com")
 
     response = client.chat.completions.create(
         model="deepseek-chat",
@@ -2311,7 +2311,7 @@ def get_xml(seq,dir):
     return content
 
 def deepseek_api_chat_talks(old_talk, task, model="deepseek-chat"):
-    client = OpenAI(api_key="sk-837765b3c48740df810a04b8f27adabe", base_url="https://api.deepseek.com")
+    client = OpenAI(api_key="###", base_url="https://api.deepseek.com")
 
     talk_list = old_talk
     content = ''
@@ -2555,10 +2555,6 @@ import time
 
 endpoints = [
 
-    "http://211.65.82.10:8085",  # GPU0
-    "http://211.65.82.10:8086",  # GPU1
-    "http://211.65.82.10:8087",   # GPU2
-    "http://211.65.82.10:8088"  # GPU3
 ]
 
 endpoint_locks = {ep: threading.Lock() for ep in endpoints}
