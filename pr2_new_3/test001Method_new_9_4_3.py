@@ -2235,7 +2235,7 @@ def convert_label_with_weight(label_str):
     # 默认返回中间值
     return 0.5
 def ollama_api(prompt, model="gemma3:1b"):
-    url = "http://211.65.82.10:8087/api/generate"
+    url = "http://****/api/generate"
     data = {
         "model": model,
         "prompt": prompt,
@@ -2254,7 +2254,7 @@ def ollama_api(prompt, model="gemma3:1b"):
     except Exception as e:
         return f"请求异常: {e}"
 def ollama_api_chat(background, task, model="gemma3:1b"):
-    url = "http://211.65.82.10:8087/api/chat"
+    url = "http://****/api/chat"
 
     # 第一次通信：发送背景信息
     background_data = {
