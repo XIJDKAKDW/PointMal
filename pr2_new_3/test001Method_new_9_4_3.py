@@ -1121,10 +1121,10 @@ def print_message(message,balance_accuracy, precision, recall, f1_value):
     print ('时间：' + t+ " ")
     print (message+' '+str(balance_accuracy)+' '+ str(precision)+' '+ str(recall)+' '+str(f1_value))
 def get_connection():
-    host = "211.65.82.10"
-    user = "root"
-    password = 'chang123'
-    db = 'malware_db'
+    host = "***"
+    user = "***"
+    password = '***'
+    db = '***'
     conn = pymysql.connect(
         host=host,
         user=user,
